@@ -1,0 +1,540 @@
+<!doctype html>
+<html lang="en">
+<head>
+  
+  <meta charset="utf-8" />
+  <title>Adding items &middot; Isotope Demo</title>
+  
+  <!--[if lt IE 9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+  
+  <link rel="stylesheet" href="css/style.css" />
+  
+  <!-- scripts at bottom of page -->
+
+</head>
+
+<style>
+  .text-box {
+    width: 200px;
+	height:200px;
+    margin: 10px;
+    color: #fff;
+    float: left;
+    font-size: 14px;
+    line-height: 1.3em;
+    padding: 30px;
+
+	/*border-top-right-radius:2em;*/
+	
+	box-shadow: 11px 11px 11px #696969;
+
+
+  }
+
+}
+
+.icon_box{
+    position:relative;
+}
+.bet_time {
+    position:absolute;
+    bottom:0;
+    right:0;
+}  
+  
+input[type=checkbox] {
+transform:matrix(0.866,-0.5,0.5,0.866,0,0);
+-ms-transform:matrix(0.866,-0.5,0.5,0.866,0,0); /* IE 9 */
+-webkit-transform:matrix(0.866,-0.5,0.5,0.866,0,0); /* Safari and Chrome */
+
+/*border: 1px solid #FF0000;*/
+}
+  
+.divChk{
+ margin-right : 15px; float:left;
+ width:10px;
+
+}
+.divText{
+ float:left;
+ width:165px;
+}
+
+  
+  .Wave {background: #72D54A;}
+  .Software {background: #000;}
+  .General {background: #00BCB4;  }
+  .Hardware {background: #003594;}
+  .Partner {background: #E51A92;}
+  .Mobile {background: #783CBD;}
+ 
+  .clickDiv{}
+
+ /*
+ a
+ {
+ background-color: #036;
+ box-shadow: 5px 5px 2px #888888;
+ }
+
+a:hover
+ {
+ background-color: #369;
+ box-shadow: 1px 1px 1px #888888;
+ }
+ */
+
+ .box {
+	box-shadow: 4px 4px 4px #696969;
+	background-color: #FF0000;
+}
+
+
+
+.header{
+padding: 0px;
+width:1828px;
+height:243px;
+top: 0px;
+position:fixed;
+z-index:10;
+background-color: #fff;
+}
+
+.thumbnail{
+margin-top:0px;
+top: 0px;
+padding:0px;
+
+}
+
+ 
+.nav
+{
+	position:fixed;
+    top: 0px;
+    right: 0px;
+	margin:0px;
+	width:868px;
+	z-index:3;
+}
+	
+.fixed {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  margin:0px;
+  z-index:3;
+  padding: 0px;
+  background:url("images/together_commerce.png");
+  background-repeat:repeat-x;
+  width:868px;
+  height:158px;
+  width:357px;
+}	
+.header-space{
+height:250px;
+}
+
+.userInfo{
+	width: 250px;
+	height: 150px;
+	background-color: #fff;
+	margin:10px;
+	padding: 30px;
+	
+	position: absolute;
+	top:0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+
+	margin: auto;
+	z-index:11;
+	position:fixed;
+	
+	box-shadow: 11px 11px 11px #696969;
+	
+	display: none;
+}
+
+.sendBtn{
+	width: 50px;
+	height: 20px;
+	/*background-color: #fff;*/
+	margin:10px;
+	padding: 30px;
+	
+	position: absolute;
+	bottom: 0;
+	left: 0;
+
+	margin: auto;
+	z-index:10;
+	position:fixed;
+
+}
+
+.btn {
+  background: #ff3d3d;
+  background-image: -webkit-linear-gradient(top, #ff3d3d, #9e0202);
+  background-image: -moz-linear-gradient(top, #ff3d3d, #9e0202);
+  background-image: -ms-linear-gradient(top, #ff3d3d, #9e0202);
+  background-image: -o-linear-gradient(top, #ff3d3d, #9e0202);
+  background-image: linear-gradient(to bottom, #ff3d3d, #9e0202);
+  -webkit-border-radius: 10;
+  -moz-border-radius: 10;
+  border-radius: 10px;
+  font-family: Arial;
+  color: #ffffff;
+  font-size: 20px;
+  padding: 5px 10px 5px 10px;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background: #fc3c3c;
+  text-decoration: none;
+}
+
+/* Background grayout when clicking on an overlay such as adding a new event*/
+div.grayout {
+    display: none;
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%; 
+    height:100%;
+    
+	background-color:red;
+
+	
+    z-index: 10;
+	
+	
+
+
+
+   opacity:0.6;
+   filter:alpha(opacity=60); /* For IE8 and earlier */
+}
+
+/*.expanded {background: url(images/loading.gif) no-repeat center;}
+.expanded {background: url(images/round-loading-icon.gif) no-repeat center;}
+.expanded {background: url(images/google-loading.gif) no-repeat center;}*/
+.expanded {background: url(images/gray-loading.gif) no-repeat center;}
+
+.redBorder
+{
+border-style:solid;
+border-color:red;
+}
+
+</style>
+
+<body class="demos ">
+
+<div class="header-space"></div>
+  
+<div class="header"><img class="thumbnail" src="images\header.png">
+<div class="nav">
+	<img class="thumbnail" src="images\filters.png"><a href="#show-all" data-option-value="*" class="selected"><img id="general" class="thumbnail" src="images\general_dn.png"></a><a href="#Mobile" data-option-value=".Mobile"><img id="mobile" class="thumbnail" src="images\mobile.png"></a><a href="#Partner" data-option-value=".Partner"><img id="partner" class="thumbnail" src="images\partner.png"></a><a href="#Hardware" data-option-value=".Hardware"><img id="hardware" class="thumbnail" src="images\hardware.png"></a><a href="#Wave" data-option-value=".Wave"><img id="wave" class="thumbnail" src="images\wave.png"></a><a href="#Software" data-option-value=".Software"><img id="software" class="thumbnail" src="images\software.png"></a>
+</div>
+</div>
+  
+<!--
+  <section id="options">
+	<img src="images\general_dn.png">
+	<img src="images\general_dn.png">
+	<img src="images\hardware_dn.png">
+	<img src="images\mobile_dn.png">
+	<img src="images\partner_dn.png">
+	<img src="images\software_dn.png">
+	<img src="images\wave_dn.png">
+	
+	<ul id="filters" class="option-set clearfix" data-option-key="filter">
+		<li><a href="#show-all" data-option-value="*" class="selected">show all</a></li>
+		<li><a href="#Hardware" data-option-value=".Hardware">Hardware</a></li>	
+		<li><a href="#Software" data-option-value=".Software">Software</a></li>
+		<li><a href="#General" data-option-value=".General">General</a></li>	
+		<li><a href="#Wave" data-option-value=".Wave">Wave</a></li>
+		<li><a href="#Partner" data-option-value=".Partner">Partner</a></li>	
+		<li><a href="#Mobile" data-option-value=".Mobile">Mobile</a></li>
+	</ul>
+	</section>
+-->
+
+  <div id="container" class="clearfix">
+  </div> 
+
+  
+  <!-- #container -->
+
+  <script src="js/jquery-1.7.1.min.js"></script>
+<!--
+<script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>  
+-->
+  <script src="js/jquery.isotope.min.js"></script>
+  <script src="js/fake-element.js"></script>
+<script>
+  $(function(){
+
+    var $container = $('#container');
+
+
+	var eLitJson = "jSon/elitInhance.json";
+	//$('i').append(eLitJson);
+
+	var classColor="blue";
+	
+	$.getJSON(eLitJson, function(jd) {
+		$.each(jd, function( index, eLit ) {
+			$.each( eLit, function( i, val ) {
+				$('#container').append('<div class=\"clickDiv ' +val.Category+ ' text-box" id=\"div-'+i+'\"><div id='+i+' class=\"divChk\"><p><input class="chkBox" type="checkbox" value=\"'+i+'\"></p></div><div class=\"divText\"><p>'+ val.Description + '</p><p>'+val.Item+'</p><div class=\"icon_box\"><img class=\"bet_time\" src=\"images\\icon_'+val.Category+'.png\"></div></div></div>');
+			});			  
+		});
+		
+		$container.isotope({});
+		
+		
+		  var $optionSets = $('#options .option-set'),
+			  $optionLinks = $optionSets.find('a');
+
+		  $optionLinks.click(function(){
+			var $this = $(this);
+			// don't proceed if already selected
+			//alert($this.hasClass('selected'));
+			if ( $this.hasClass('selected') ) {
+			  return false;
+			}
+			var $optionSet = $this.parents('.option-set');
+			$optionSet.find('.selected').removeClass('selected');
+			$this.addClass('selected');
+	  
+			// make option object dynamically, i.e. { filter: '.my-filter-class' }
+			var options = {},
+				key = $optionSet.attr('data-option-key'),
+				value = $this.attr('data-option-value');
+			// parse 'false' as false boolean
+			value = value === 'false' ? false : value;
+			options[ key ] = value;
+			if ( key === 'layoutMode' && typeof changeLayoutMode === 'function' ) {
+			  // changes in layout modes need extra logic
+			  changeLayoutMode( $this, options )
+			} else {
+			  // otherwise, apply new options
+			  alert("key: " + key + " value: " + value);
+			  alert('start');
+			  $container.isotope( options );
+			  alert('done');
+			}
+			
+			return false;
+		  });
+		
+		var checkClicked = false;
+		$(':checkbox').click(function(e) {
+			checkClicked = true;
+			var chkBoxVal = $(this).val();
+			if(this.checked){
+				$(this).parent().parent().parent().addClass( "box");
+				AdditemArray(chkBoxVal);
+			}else{
+				$(this).parent().parent().parent().removeClass("box");
+				RemoveitemArray(chkBoxVal);
+			}
+			window.location.replace("#?selectedItems="+selectedItems);
+		});
+
+
+		$('a').click(function(e) {
+			var value = $(this).attr('data-option-value');
+			var image = $(this).children().attr('src');
+
+			
+			$("#general").attr("src","images/general.png");
+			$("#hardware").attr("src","images/hardware.png");
+			$("#software").attr("src","images/software.png");
+			$("#general").attr("src","images/general.png");
+			$("#wave").attr("src","images/wave.png");
+			$("#partner").attr("src","images/partner.png");
+			$("#mobile").attr("src","images/mobile.png");
+			
+
+			switch(value) {
+				case ("*"):
+					$(this).children().attr("src","images/general_dn.png");
+				break;
+				case (".Hardware"):
+					$(this).children().attr("src","images/hardware_dn.png");
+				break;
+				case (".Software"):
+					$(this).children().attr("src","images/software_dn.png");
+				break;
+				case (".General"):
+					$(this).children().attr("src","images/general_dn.png");
+				break;
+				case (".Wave"):
+					$(this).children().attr("src","images/wave_dn.png");
+				break;
+				case (".Partner"):
+					$(this).children().attr("src","images/partner_dn.png");
+				break;
+				case (".Mobile"):
+					$(this).children().attr("src","images/mobile_dn.png");
+				break;
+				
+				
+			}
+			
+			$container.isotope({});
+			var options = {},
+				key = 'filter',
+				value = value;
+				
+				options[ key ] = value;
+				$container.isotope( options );
+
+
+		window.location.replace("#?selectedItems="+selectedItems);		
+		});
+		
+		$('.clickDiv').click(function(e) {
+			if(!checkClicked){
+				var isChecked = $(this).children().children().first().children()[0].checked;
+				var chkBoxVal = $(this).children().children().first().children().val();
+				
+				if(isChecked){
+					$(this).children().children().first().children().attr('checked', false);
+					$(this).removeClass("box");
+					RemoveitemArray(chkBoxVal);
+				}else{
+					$(this).children().children().first().children().attr('checked', true);
+					$(this).addClass( "box");
+					AdditemArray(chkBoxVal);
+				}
+			}else{
+				checkClicked=false;
+			}
+			
+			window.location.replace("#?selectedItems="+selectedItems);
+			
+		});
+	  });
+	
+
+	//userInfo
+	
+	$('#btnSend').click(function(e) {
+		$('.userInfo').show();
+		$('.grayout').show();
+	});
+	
+	$('#btnDone').click(function(e) {
+		var errorMSG = ""
+		
+		fname = $("#fName");
+		fname_regex = /^[a-zA-Z]+$/
+		if (!fname.val().match(fname_regex)) {
+		   errorMSG = "Not valid first name"+"\n";
+		   $(fname).addClass('redBorder');
+		}else{
+			$(fname).removeClass('redBorder');
+		}
+		
+		lname = $("#lName");
+		lname_regex = /^[a-zA-Z]+$/
+		if (!lname.val().match(fname_regex)) {
+		   errorMSG += "Not valid last name"+"\n";
+		   $(lname).addClass('redBorder');
+		}else{
+			$(lname).removeClass('redBorder');
+		}
+		
+		email_address = $('#email');
+		email_regex = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/i;
+
+		if(!email_regex.test(email_address.val())){ 
+			errorMSG +="Not valid email"+"\n"; 
+			e.preventDefault(); 
+			$(email_address).addClass('redBorder');  
+		}else{
+			$(email_address).removeClass('redBorder'); 
+		}
+		
+		if (errorMSG.length>0){
+			alert(errorMSG);
+		}else{
+			window.location.replace("#?selectedItems="+selectedItems+"&fname="+fname.val()+"&lname="+lname.val()+"&email="+email_address.val());
+			$('.userInfo').hide();
+			$('#idGrayout').addClass('expanded').addClass('expanded');
+		}
+
+	});
+	
+	$('#btnCancel').click(function(e) {
+			$('.userInfo').hide();
+			window.location.replace("#?cancel=true");
+			$('#idGrayout').addClass('expanded').addClass('expanded');
+	});
+	
+	
+	var selectedItems = [];
+	function AdditemArray(item)
+	{
+		var i = selectedItems.indexOf(item);
+		if(i != -1) {
+			selectedItems.splice(i, 1);
+		}
+		selectedItems.push(item);
+	}
+	
+	function RemoveitemArray(item)
+	{
+		var i = selectedItems.indexOf(item);
+		if(i != -1) {
+			selectedItems.splice(i, 1);
+		}
+	}
+	
+	
+	
+
+	
+
+
+
+	
+	
+  });
+</script>
+</section> <!-- #content -->
+<div class="fixed">
+
+</div> 
+<div class="userInfo">
+
+
+<fieldset>
+        <legend>Contact</legend>
+		<p>
+		<input id="fName" placeholder="First Name">
+		<input id="lName" placeholder="Last Name">
+        <input id="email" placeholder="Email">
+        </p>
+		<p>
+        <input type="button" class="btn" value="Done" id="btnDone">
+		<input type="button" class="btn" value="Cancel" id="btnCancel">
+		</p>
+		</fieldset>
+<span id="errorMSG"></span>		
+</div>
+
+<div  class="sendBtn">
+<input type="button" class="btn" value="Send" id="btnSend">
+</div>
+
+<div id="idGrayout" class="grayout"></div>
+
+</body>
+</html>

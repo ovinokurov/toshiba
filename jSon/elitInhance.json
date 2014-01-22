@@ -1,0 +1,154 @@
+{
+  "eLit": [
+    {
+      "Item": "TCxWave Brochure",
+      "Description": "Brochure",
+      "Category": "Hardware",
+      "Link": "http://www.ibm.com/common/ssi/cgi-bin/ssialias?infotype=PM&subtype=SP&htmlfid=RTD12527USEN&attachment=RTD12527USEN.PDF&appname=STG_RT_USEN_SP"
+    },
+    {
+      "Item": "SurePOS 700 Brochure",
+      "Description": "Brochure",
+      "Category": "Hardware",
+      "Link": "http://www.ibm.com/common/ssi/cgi-bin/ssialias?subtype=SP&infotype=PM&appname=STGE_RT_PO_USEN&htmlfid=RTD12519USEN&attachment=RTD12519USEN.PDF"
+    },
+    {
+      "Item": "SurePOS 500 Brochure",
+      "Description": "Brochure",
+      "Category": "Hardware",
+      "Link": "http://www.ibm.com/common/ssi/cgi-bin/ssialias?infotype=PM&subtype=SP&htmlfid=RTD12512USEN&attachment=RTD12512USEN.PDF&appname=STG_RT_USEN_SP"
+    },
+    {
+      "Item": "SurePOS 300 Brochure",
+      "Description": "Brochure",
+      "Category": "Hardware",
+      "Link": "http://www.ibm.com/common/ssi/cgi-bin/ssialias?infotype=PM&subtype=SP&htmlfid=RTD12520USEN&attachment=RTD12520USEN.PDF&appname=STG_RT_USEN_SP"
+    },
+    {
+      "Item": "Taco",
+      "Description": "Brochure",
+      "Category": "Hardware",
+      "Link": "http://www.ibm.com/common/ssi/cgi-bin/ssialias?infotype=PM&subtype=SP&htmlfid=RTD12504USEN&attachment=RTD12504USEN.PDF&appname=STG_RT_USEN_SP"
+    },
+    {
+      "Item": "SelfCheckout Brochure",
+      "Description": "Brochure",
+      "Category": "Hardware",
+      "Link": "http://www.ibm.com/common/ssi/cgi-bin/ssialias?subtype=SP&infotype=PM&appname=STGE_RT_SE_USEN&htmlfid=RTS03038USEN&attachment=RTS03038USEN.PDF"
+    },
+    {
+      "Item": "SureMark Dual-station Brochure",
+      "Description": "Brochure",
+      "Category": "Hardware",
+      "Link": "http://www.ibm.com/common/ssi/cgi-bin/ssialias?infotype=PM&subtype=SP&htmlfid=RTD12512USEN&attachment=RTD12512USEN.PDF&appname=STG_RT_USEN_SP"
+    },
+    {
+      "Item": "Mobile Barcode Brochure",
+      "Description": "Brochure",
+      "Category": "Hardware",
+      "Link": "http://www.ibm.com/common/ssi/cgi-bin/ssialias?infotype=PM&subtype=SP&htmlfid=RTD12531USEN&attachment=RTD12531USEN.PDF&appname=STG_RT_USEN_SP"
+    },
+    {
+      "Item": "Data Integration Facility Brochure",
+      "Description": "Brochure",
+      "Category": "Software",
+      "Link": "http://www.ibm.com/common/ssi/cgi-bin/ssialias?infotype=PM&subtype=SP&htmlfid=RTD12516USEN&attachment=RTD12516USEN.PDF&appname=STG_RT_USEN_SP"
+    },
+    {
+      "Item": "Store Integrator Brochure",
+      "Description": "Brochure",
+      "Category": "Software",
+      "Link": "http://www.ibm.com/common/ssi/cgi-bin/ssialias?infotype=PM&subtype=SP&htmlfid=RTD12517USEN&attachment=RTD12517USEN.PDF&appname=STG_RT_USEN_SP"
+    },
+    {
+      "Item": "SurePOS ACE Brochure",
+      "Description": "Brochure",
+      "Category": "Software",
+      "Link": "http://www.ibm.com/common/ssi/cgi-bin/ssialias?subtype=SP&infotype=PM&appname=STGE_RT_ST_USEN&htmlfid=RTD12518USEN&attachment=RTD12518USEN.PDF"
+    },
+    {
+      "Item": "TCxGravity Brochure",
+      "Description": "Brochure",
+      "Category": "Software",
+      "Link": "http://www.ibm.com/common/ssi/cgi-bin/ssialias?subtype=SP&infotype=PM&appname=STGE_RT_ST_USEN&htmlfid=RTS03045USEN&attachment=RTS03045USEN.PDF"
+    },
+    {
+      "Item": "S3 VisualStore Suite Brochure",
+      "Description": "Brochure",
+      "Category": "Software",
+      "Link": "http://www.ibm.com/common/ssi/cgi-bin/ssialias?subtype=SP&infotype=PM&appname=STGE_RT_ST_USEN&htmlfid=RTD12515USEN&attachment=RTD12515USEN.PDF"
+    },
+    {
+      "Item": "4690 Operating System Brochure",
+      "Description": "Brochure",
+      "Category": "Software",
+      "Link": "http://www.ibm.com/common/ssi/cgi-bin/ssialias?infotype=PM&subtype=SP&htmlfid=RTD12521USEN&attachment=RTD12521USEN.PDF&appname=STG_RT_USEN_SP"
+    },
+    {
+      "Item": "Remote Management Agent Brochure",
+      "Description": "Brochure",
+      "Category": "Software",
+      "Link": "http://www.ibm.com/common/ssi/cgi-bin/ssialias?subtype=SP&infotype=PM&appname=STGE_RT_ST_USEN&htmlfid=RTD12537USEN&attachment=RTD12537USEN.PDF"
+    },
+    {
+      "Item": "TCxEngage Brochure",
+      "Description": "Brochure",
+      "Category": "Software",
+      "Link": "http://www.ibm.com/common/ssi/cgi-bin/ssialias?subtype=SP&infotype=PM&appname=STGE_RT_SE_USEN&htmlfid=RTD12535USEN&attachment=RTD12535USEN.PDF"
+    },
+    {
+      "Item": "CHEC Brochure",
+      "Description": "Brochure",
+      "Category": "Software",
+      "Link": "http://www.ibm.com/common/ssi/cgi-bin/ssialias?subtype=SP&infotype=PM&appname=STGE_RT_SE_USEN&htmlfid=RTD12536USEN&attachment=RTD12536USEN.PDF"
+    },
+    {
+      "Item": "Winning Together With Our Customers",
+      "Description": "Case Study",
+      "Category": "Partner",
+      "Link": "http://www.ibm.com/common/ssi/cgi-bin/ssialias?subtype=AB&infotype=PM&appname=STGE_RT_RG_USEN&htmlfid=RTC03040USEN&attachment=RTC03040USEN.PDF"
+    },
+    {
+      "Item": "Toshiba Together Commerce Alliance Partners",
+      "Description": "Partner List",
+      "Category": "Partner",
+      "Link": "http://www-03.ibm.com/products/retail/partners/"
+    },
+    {
+      "Item": "Design Whitepaper",
+      "Description": "Whitepaper",
+      "Category": "General",
+      "Link": "http://www.ibm.com/common/ssi/cgi-bin/ssialias?subtype=WH&infotype=SA&appname=STGE_RT_RG_USEN&htmlfid=RTW12536USEN&attachment=RTW12536USEN.PDF"
+    },
+    {
+      "Item": "Toshiba Global Commerce Solutions Portfolio Catalog",
+      "Description": "Catalog",
+      "Category": "General",
+      "Link": "http://www.ibm.com/common/ssi/cgi-bin/ssialias?subtype=ST&infotype=SA&appname=STGE_RT_RG_USEN&htmlfid=RTZ12345USEN&attachment=RTZ12345USEN.PDF"
+    },
+    {
+      "Item": "M-Commerce: It's about \"Me\" not just \"Mobile\"  ",
+      "Description": "Whitepaper",
+      "Category": "Mobile",
+      "Link": "http://www.ibm.com/common/ssi/cgi-bin/ssialias?subtype=WH&infotype=SA&appname=STGE_RT_RG_USEN&htmlfid=RTW12537USEN&attachment=RTW12537USEN.PDF"
+    },
+    {
+      "Item": "Omni-Channel Trends",
+      "Description": "Study",
+      "Category": "General",
+      "Link": "http://www.ibm.com/common/ssi/cgi-bin/ssialias?subtype=WH&infotype=SA&appname=STGE_RT_RG_USEN&htmlfid=RTW12538USEN&attachment=RTW12538USEN.PDF"
+    },
+    {
+      "Item": "Oktoberfest Customer Success Story",
+      "Description": "Video",
+      "Category": "Wave",
+      "Link": "http://www.ibm.com/common/ssi/cgi-bin/ssialias?subtype=ST&infotype=SA&appname=STGE_RT_RG_USEN&htmlfid=RTV03014USEN&attachment=RTV03014USEN.WAV"
+    },
+    {
+      "Item": "Retail Hardening Whitepaper",
+      "Description": "Whitepaper",
+      "Category": "Hardware",
+      "Link": "http://www.ibm.com/common/ssi/cgi-bin/ssialias?subtype=WH&infotype=SA&appname=STGE_RT_RG_USEN&htmlfid=RTW12539USEN&attachment=RTW12539USEN.PDF"
+    }
+  ]
+}
