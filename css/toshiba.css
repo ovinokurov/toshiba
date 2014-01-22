@@ -1,0 +1,215 @@
+  .text-box {
+    width: 200px;
+	height:200px;
+    margin: 10px;
+    color: #fff;
+    float: left;
+    font-size: 14px;
+    line-height: 1.3em;
+    padding: 30px;
+
+	/*border-top-right-radius:2em;*/
+	
+	box-shadow: 11px 11px 11px #696969;
+
+
+  }
+
+}
+
+.icon_box{
+    position:relative;
+}
+.bet_time {
+    position:absolute;
+    bottom:0;
+    right:0;
+}  
+  
+input[type=checkbox] {
+transform:matrix(0.866,-0.5,0.5,0.866,0,0);
+-ms-transform:matrix(0.866,-0.5,0.5,0.866,0,0); /* IE 9 */
+-webkit-transform:matrix(0.866,-0.5,0.5,0.866,0,0); /* Safari and Chrome */
+
+/*border: 1px solid #FF0000;*/
+}
+  
+.divChk{
+ margin-right : 15px; float:left;
+ width:10px;
+
+}
+.divText{
+ float:left;
+ width:165px;
+}
+
+  
+  .Wave {background: #72D54A;}
+  .Software {background: #000;}
+  .General {background: #00BCB4;  }
+  .Hardware {background: #003594;}
+  .Partner {background: #E51A92;}
+  .Mobile {background: #783CBD;}
+ 
+  .clickDiv{}
+
+ /*
+ a
+ {
+ background-color: #036;
+ box-shadow: 5px 5px 2px #888888;
+ }
+
+a:hover
+ {
+ background-color: #369;
+ box-shadow: 1px 1px 1px #888888;
+ }
+ */
+
+ .box {
+	box-shadow: 4px 4px 4px #696969;
+	background-color: #FF0000;
+}
+
+
+
+.header{
+padding: 0px;
+width:1828px;
+height:243px;
+top: 0px;
+position:fixed;
+z-index:10;
+background-color: #fff;
+}
+
+.thumbnail{
+margin-top:0px;
+top: 0px;
+padding:0px;
+
+}
+
+ 
+.nav
+{
+	position:fixed;
+    top: 0px;
+    right: 0px;
+	margin:0px;
+	width:868px;
+	z-index:3;
+}
+	
+.fixed {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  margin:0px;
+  z-index:3;
+  padding: 0px;
+  background:url("images/together_commerce.png");
+  background-repeat:repeat-x;
+  width:868px;
+  height:158px;
+  width:357px;
+}	
+.header-space{
+height:250px;
+}
+
+.userInfo{
+	width: 250px;
+	height: 150px;
+	background-color: #fff;
+	margin:10px;
+	padding: 30px;
+	
+	position: absolute;
+	top:0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+
+	margin: auto;
+	z-index:11;
+	position:fixed;
+	
+	box-shadow: 11px 11px 11px #696969;
+	
+	display: none;
+}
+
+.sendBtn{
+	width: 50px;
+	height: 20px;
+	/*background-color: #fff;*/
+	margin:10px;
+	padding: 30px;
+	
+	position: absolute;
+	bottom: 0;
+	left: 0;
+
+	margin: auto;
+	z-index:10;
+	position:fixed;
+
+}
+
+.btn {
+  background: #ff3d3d;
+  background-image: -webkit-linear-gradient(top, #ff3d3d, #9e0202);
+  background-image: -moz-linear-gradient(top, #ff3d3d, #9e0202);
+  background-image: -ms-linear-gradient(top, #ff3d3d, #9e0202);
+  background-image: -o-linear-gradient(top, #ff3d3d, #9e0202);
+  background-image: linear-gradient(to bottom, #ff3d3d, #9e0202);
+  -webkit-border-radius: 10;
+  -moz-border-radius: 10;
+  border-radius: 10px;
+  font-family: Arial;
+  color: #ffffff;
+  font-size: 20px;
+  padding: 5px 10px 5px 10px;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background: #fc3c3c;
+  text-decoration: none;
+}
+
+/* Background grayout when clicking on an overlay such as adding a new event*/
+div.grayout {
+    display: none;
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%; 
+    height:100%;
+    
+	background-color:red;
+
+	
+    z-index: 10;
+	
+	
+
+
+
+   opacity:0.6;
+   filter:alpha(opacity=60); /* For IE8 and earlier */
+}
+
+/*.expanded {background: url(images/loading.gif) no-repeat center;}
+.expanded {background: url(images/round-loading-icon.gif) no-repeat center;}
+.expanded {background: url(images/google-loading.gif) no-repeat center;}*/
+.expanded {background: url(images/gray-loading.gif) no-repeat center;}
+
+.redBorder
+{
+border-style:solid;
+border-color:red;
+}
